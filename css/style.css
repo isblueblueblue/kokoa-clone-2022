@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
+@import "reset.css";
+@import "status-bar.css";
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+  font-weight: 500;
+  color: #202124;
+}
+
+.welcome-header {
+  margin-top: 80px;
+  text-align: center;
+}
+.welcome-header__title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.welcome-header__text {
+  width: 50%;
+  color: #999;
+}
