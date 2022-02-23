@@ -1,7 +1,13 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
+
 @import "reset.css";
 @import "variables.css";
-@import "status-bar.css";
+
+/* components */
+@import "components/status-bar.css";
+
+/* screens */
+@import "screens/login.css";
 
 body,
 input {
@@ -10,49 +16,4 @@ input {
     "Malgun Gothic", sans-serif;
   font-weight: 500;
   color: #202124;
-}
-
-.welcome-header {
-  margin: 80px 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.welcome-header__title {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-.welcome-header__text {
-  width: 80%;
-  color: #999;
-  line-height: 20px;
-}
-
-#login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0 30px;
-}
-
-#login-form input {
-  padding: 15px 0;
-  border: none;
-  font-size: 16px;
-  font-weight: 500;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: 0.3s ease-in-out;
-}
-#login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
-#login-form input:focus {
-  border-color: var(--yellow);
-}
-#login-form input:nth-child(2) {
-  margin-bottom: 25px;
-}
-#login-form input[type="submit"] {
-  border: none;
-  border-radius: 5px;
 }
