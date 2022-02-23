@@ -6,6 +6,7 @@
   position: fixed;
   box-sizing: border-box;
   width: 100%;
+  background-color: #fff;
 }
 .screen-header__title {
   font-size: 26px;
