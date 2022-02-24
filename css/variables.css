@@ -3,4 +3,6 @@
   --tomato: #ff6229;
   --black-gray: #2e363e;
   --horizontal-space: 15px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.1);
+  --main-gray: rgba(0, 0, 0, 0.4);
 }

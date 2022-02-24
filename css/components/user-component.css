@@ -19,7 +19,7 @@
 }
 .user-component__subtitle {
   margin-top: 8px;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--main-gray);
 }
 .user-component__avater--xl {
   width: 60px;
@@ -35,7 +35,7 @@
   font-weight: 500;
 }
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--main-gray);
   font-size: 16px;
   font-weight: 700;
   display: flex;
