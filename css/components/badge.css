@@ -17,4 +17,7 @@
   height: 5px;
   display: block;
   border-radius: 50%;
+  position: absolute;
+  right: -6px;
+  top: -5px;
 }

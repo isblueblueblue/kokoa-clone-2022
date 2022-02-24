@@ -17,7 +17,8 @@
   display: flex;
   align-items: center;
 }
-.screen-header__icon span {
+.screen-header__icon > span {
   margin-left: 20px;
   color: var(--black-gray);
+  position: relative;
 }
