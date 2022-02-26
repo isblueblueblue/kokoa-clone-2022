@@ -1,28 +1,6 @@
 .find-screen {
   margin-top: 95px;
 }
-.find-icons {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 25px;
-}
-
-.find-icons__icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.find-icons__icon i {
-  font-size: 30px;
-}
-.find-icons__icon span {
-  margin-top: 18px;
-  text-align: center;
-  line-height: 18px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-}
 
 .recommended-friends span {
   margin: 110px 0;
