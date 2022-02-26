@@ -1,2 +1,32 @@
 .settings-screen {
+  margin-top: 74px;
+}
+
+.settings__setting {
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(185, 185, 185, 0.1);
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  color: var(--black-gray);
+  justify-content: space-between;
+}
+.settings__setting:last-child {
+  padding-bottom: 30px;
+  border-bottom: var(--main-border);
+}
+.settings__setting i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+.settings__setting-column:last-child {
+  color: var(--main-gray);
+  font-size: 16px;
+}
+
+.settings__setting-column span i {
+  font-size: 14px;
+  color: var(--tomato);
+  vertical-align: middle;
+  opacity: 0.9;
 }
