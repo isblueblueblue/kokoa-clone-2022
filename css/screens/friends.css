@@ -27,3 +27,27 @@
   opacity: 0.5;
   align-items: center;
 }
+
+@keyframes highSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: #3c1e1e;
+  animation: highSplashScreen 1s ease-in-out forwards;
+}

@@ -22,3 +22,14 @@
   color: var(--black-gray);
   position: relative;
 }
+@keyframes rotateGear {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.screen-header__icon .fa-gear:hover {
+  animation: rotateGear 3s linear infinite;
+}

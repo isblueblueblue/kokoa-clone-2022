@@ -93,3 +93,21 @@
 .open-post__heart-conut span {
   margin-left: 4px;
 }
+@keyframes heartBeat {
+  0% {
+    color: #fff;
+    transform: none;
+  }
+  50% {
+    color: var(--tomato);
+    transform: scale(1.2);
+  }
+  100% {
+    color: #fff;
+    transform: none;
+  }
+}
+.open-post__heart-conut:hover i {
+  will-change: transform;
+  animation: heartBeat 1.5s linear infinite;
+}

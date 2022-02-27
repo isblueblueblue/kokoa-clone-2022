@@ -24,12 +24,40 @@
   margin-bottom: 20px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 .message-row {
   width: 100%;
   display: flex;
   color: var(--black-gray);
   margin-bottom: 15px;
 }
+.message-row:not(:last-of-type) {
+  animation: fadeIn 1s linear;
+}
+.message-row:last-of-type {
+  opacity: 0;
+  animation: 0.3s linear 1.3s forwards fadeLeft;
+}
+
 .message-row img {
   width: 50px;
   height: 50px;
@@ -86,6 +114,7 @@
   padding: 4px var(--horizontal-space);
   box-sizing: border-box;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 .reply .reply__column:first-child {
   width: 10%;
@@ -101,6 +130,7 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: #f8f8f8;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 .reply__column > i {
   color: var(--main-gray);
@@ -126,4 +156,22 @@
 .reply .reply__column button:focus,
 .reply .reply__column button:active {
   outline: none;
+}
+
+.reply .reply__column:first-child {
+  transition: opacity 0.3s ease-in-out;
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-laugh,
+.reply:focus-within button {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.reply input:focus {
+  width: 92vw;
+  transform: translate(-10%) translateY(-47px);
+}
+.reply:focus-within {
+  transform: translateY(47px);
 }
