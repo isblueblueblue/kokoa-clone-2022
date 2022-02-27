@@ -28,6 +28,7 @@
   width: 100%;
   display: flex;
   color: var(--black-gray);
+  margin-bottom: 15px;
 }
 .message-row img {
   width: 50px;
@@ -58,4 +59,71 @@
   opacity: 0.6;
   font-weight: 600;
   font-size: 12px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  margin-right: 0px;
+  margin-left: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid rgba(216, 216, 216, 0.5);
+  display: flex;
+  justify-content: space-between;
+  padding: 4px var(--horizontal-space);
+  box-sizing: border-box;
+  align-items: center;
+}
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 19px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+}
+.reply__column > i {
+  color: var(--main-gray);
+}
+.reply .reply__column:last-child > i,
+.reply .reply__column:last-child button {
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.reply .reply__column:last-child > i {
+  right: 45px;
+}
+.reply .reply__column button {
+  background-color: var(--yellow);
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  border: var(--main-border);
+  color: var(--black-gray);
+}
+.reply .reply__column button:focus,
+.reply .reply__column button:active {
+  outline: none;
 }
